@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+{%block content%}
+
+    <main>
+     <nav>
+        <a href={{ url_for('day',num=15) }}>Вернуться к записи</a>
+      </nav>
+      <article>
+        <figure>
+          <img src="../static/files/keks-3.jpg" width="486" height="315" alt="Кексик">
+          <figcaption>Кекс хвалит нас за значительные успехи в обучении.</figcaption>
+        </figure>
+        <nav class="pagination">
+          <a href={{ url_for('photo',num=3) }}>&lt; Назад</a>
+          <a title="Фото в галерее закончились">Вперёд &gt;</a>
+        </nav>
+      </article>
+      <aside>
+        Тут могла бы быть ваша реклама
+      </aside>
+    </main>
+
+{%endblock%}
